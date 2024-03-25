@@ -1,4 +1,4 @@
-package jds.datastructure;
+package jds.datastructures;
 
 public class HelloWorld {
     public static void main(final String[] args) {

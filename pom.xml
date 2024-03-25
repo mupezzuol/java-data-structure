@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>jds</groupId>
-	<artifactId>data-strucutre</artifactId>
+	<artifactId>data-structures</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
-	<name>java-data-structure</name>
+	<name>java-data-structures</name>
 	<url>https://github.com/mupezzuol</url>
 	
 	<properties>
