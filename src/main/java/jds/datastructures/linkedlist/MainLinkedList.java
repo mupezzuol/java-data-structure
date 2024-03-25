@@ -8,6 +8,9 @@ public class MainLinkedList {
         linkedList.printTail();
         linkedList.printLength();
 
+        linkedList.append(7);
+        linkedList.append(13);
+
         linkedList.printList();
     }
 }

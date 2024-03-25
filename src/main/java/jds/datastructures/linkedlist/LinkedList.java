@@ -13,6 +13,19 @@ public class LinkedList
         length = 1;
     }
 
+    public void append(int value){
+        Node newNode = new Node( value );
+        // Empty List
+        if(length == 0){
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.setNext(newNode); // Setting new node in the tail
+            tail = newNode; // Pointer to the last item
+        }
+        length++;
+    }
+
     public void printList(){
         Node temp = head;
         while ( temp != null ){
@@ -38,16 +51,16 @@ public class LinkedList
 
     public void printHead()
     {
-        System.out.println("Head: "+this.head.getValue());
+        System.out.println("Head: "+head.getValue());
     }
 
     public void printTail()
     {
-        System.out.println("Tail: "+this.tail.getValue());
+        System.out.println("Tail: "+tail.getValue());
     }
 
     public void printLength()
     {
-        System.out.println("Length: "+this.length);
+        System.out.println("Length: "+length);
     }
 }
