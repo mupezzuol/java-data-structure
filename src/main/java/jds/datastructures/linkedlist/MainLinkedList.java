@@ -2,15 +2,13 @@ package jds.datastructures.linkedlist;
 
 public class MainLinkedList {
     public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList(4);
+        LinkedList linkedList = new LinkedList(1);
 
-        linkedList.printHead();
-        linkedList.printTail();
-        linkedList.printLength();
+        linkedList.append(2);
 
-        linkedList.append(7);
-        linkedList.append(13);
 
-        linkedList.printList();
+        System.out.println(linkedList.removeLast().getValue());
+        System.out.println(linkedList.removeLast().getValue());
+        System.out.println(linkedList.removeLast());
     }
 }

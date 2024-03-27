@@ -25,6 +25,27 @@ public class LinkedList {
         length++;
     }
 
+    public Node removeLast() {
+        if (length == 0) {
+            return null;
+        }
+        Node temp = head; // Looping from Head
+        Node pre = head;
+        while (temp.getNext() != null) {
+            pre = temp; // Current will be the previous Node in the var "pre"
+            temp = temp.getNext(); // Pointer will be the next
+        }
+        tail = pre;
+        tail.setNext(null);
+        length--;
+        // The last item was removed, has no item, reset the list
+        if (length == 0) {
+            head = null;
+            tail = null;
+        }
+        return temp;
+    }
+
     public void printList() {
         Node temp = head;
         while (temp != null) {
